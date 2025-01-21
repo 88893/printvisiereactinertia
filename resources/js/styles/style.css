@@ -1764,7 +1764,7 @@ label {
     transform: translate(-10px, 15px);
     transition: 0.4s linear;
 }
-.services-item:hover .services-icon img {
+.services-item .services-icon img {
     transform: translate(0) !important;
 }
 .services-content .title {
@@ -1788,23 +1788,22 @@ label {
     [class*="col-"]:nth-child(3)
     .services-item
     .services-icon::before {
+    background: var(--tg-lavender);
+}
+
+.services-area
+    .row
+    [class*="col-"]:nth-child(5)
+    .services-item
+    .services-icon::before {
     background: var(--tg-bright-gray);
 }
 .services-area
     .row
-    [class*="col-"]:nth-child(4)
+    [class*="col-"]:nth-child(6)
     .services-item
     .services-icon::before {
     background: var(--tg-lavender);
-}
-.services-area .row [class*="col-"]:nth-child(2) .services-icon img {
-    transform: translate(20px, 15px);
-}
-.services-area .row [class*="col-"]:nth-child(3) .services-icon img {
-    transform: translate(20px, -20px);
-}
-.services-area .row [class*="col-"]:nth-child(4) .services-icon img {
-    transform: translate(-30px, 18px);
 }
 
 /* services-two */

@@ -27,6 +27,18 @@ const ServicesArea = () => {
       url: "/services-details",
       delay_time: 8,
     },
+    {
+      title: "Lorem Ipsum",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      url: "/services-details",
+      delay_time: 8,
+    },
+    {
+      title: "Lorem Ipsum",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      url: "/services-details",
+      delay_time: 8,
+    },
   ];
 
   return (
@@ -34,7 +46,7 @@ const ServicesArea = () => {
       <div className="container">
         <div className="row justify-content-center">
           {services_area_list.map((item, index) => (
-            <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+            <div key={index} className="col-xl-4 col-lg-5 col-md-6 col-sm-10">
               <ServicesAreaItem index={index} item={item} />
             </div>
           ))}
