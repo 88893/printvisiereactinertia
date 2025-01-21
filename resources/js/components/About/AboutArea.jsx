@@ -9,23 +9,27 @@ const AboutArea = () => {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-46 order-0 order-lg-2">
                             <div className="about-img text-end">
-                                <img src="/img/images/about_img.jpg" alt="" />
+                                <img
+                                    src="/img/icon/dennis-den-engelsman-offerte-aanvragen-printvisie.png"
+                                    alt=""
+                                />
                             </div>
                         </div>
                         <div className="col-54">
                             <div className="about-content">
                                 <div className="section-title mb-25">
-                                    <span className="sub-title">
-                                        About Company
-                                    </span>
+                                    <span className="sub-title">Over ons</span>
                                     <h2 className="title">
-                                        Lorem ipsum dolor sit, amet consectetur
+                                        Creatief en Duurzaam Denken
                                     </h2>
                                 </div>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard.
+                                    Bij ons draait alles om creativiteit en
+                                    duurzaamheid. Wij geloven dat design en
+                                    productie hand in hand gaan met respect voor
+                                    de natuur. Met een frisse blik en passie
+                                    voor kleur brengen we ideeën tot leven,
+                                    altijd met een groen hart.
                                 </p>
                                 <ul className="list-wrap">
                                     <li>
@@ -37,12 +41,12 @@ const AboutArea = () => {
                                         </div>
                                         <div className="content">
                                             <h4 className="title">
-                                                Lorem Ipsum
+                                                Duurzaam vakmanschap
                                             </h4>
                                             <p>
-                                                Lorem Ipsum is simply dummy text
-                                                of the printing and typesetting
-                                                industry.
+                                                Innovatieve oplossingen die
+                                                zorgen voor een schonere en
+                                                groenere toekomst.
                                             </p>
                                         </div>
                                     </li>
@@ -55,12 +59,12 @@ const AboutArea = () => {
                                         </div>
                                         <div className="content">
                                             <h4 className="title">
-                                                Lorem Ipsum
+                                                Samen sterker
                                             </h4>
                                             <p>
-                                                Lorem Ipsum is simply dummy text
-                                                of the printing and typesetting
-                                                industry.
+                                                We werken samen met passie en
+                                                aandacht om ideeën werkelijkheid
+                                                te maken.
                                             </p>
                                         </div>
                                     </li>
@@ -68,11 +72,12 @@ const AboutArea = () => {
 
                                 <div className="about-content-bottom">
                                     <span>
-                                        Lorem ipsum dolor sit amet consectetur
+                                        samen maken we de wereld een stukje
+                                        mooier.
                                     </span>
                                     <div className="read-more-btn">
                                         <Link href="/about-us" className="btn">
-                                            Read More <span></span>
+                                            Lees Meer <span></span>
                                         </Link>
                                     </div>
                                 </div>

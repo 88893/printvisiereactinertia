@@ -12,38 +12,32 @@ const FooterOne = () => {
                                 <div className="footer-widget">
                                     <div className="logo">
                                         <Link href="/">
-                                            {/* <img src="/img/logo/w_logo.png" alt="" /> */}
+                                            <img
+                                                src="/img/logo/logo.png"
+                                                alt=""
+                                            />
                                         </Link>
                                     </div>
                                     <div className="footer-social">
                                         <ul className="list-wrap">
                                             <li>
-                                                <a href="#">
+                                                <a href="https://www.facebook.com/DrukkerijPrintvisie/?locale=nl_NL">
                                                     <i className="fab fa-facebook-f"></i>
                                                 </a>
                                             </li>
-                                            <li className="active">
-                                                <a href="#">
-                                                    <i className="fab fa-twitter"></i>
-                                                </a>
-                                            </li>
+
                                             <li>
-                                                <a href="#">
-                                                    <i className="fab fa-google-plus-g"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
+                                                <a href="https://nl.linkedin.com/company/drukkerij-printvisie">
                                                     <i className="fab fa-linkedin-in"></i>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div className="footer-contact">
-                                        <span>For Support</span>
+                                        <span>Contact</span>
                                         <h2 className="title">
-                                            <a href="tel:0123456789">
-                                                0123 - 567 - 7650
+                                            <a href="tel: 010 -7410410">
+                                                010-7410410
                                             </a>
                                         </h2>
                                     </div>
@@ -51,7 +45,7 @@ const FooterOne = () => {
                             </div>
                             <div className="col-lg-3 col-sm-6">
                                 <div className="footer-widget">
-                                    <h4 className="fw-title">Pages</h4>
+                                    <h4 className="fw-title">Paginas</h4>
                                     <div className="fw-link">
                                         <ul className="list-wrap">
                                             <li>
@@ -67,42 +61,14 @@ const FooterOne = () => {
                                                     Contact
                                                 </Link>
                                             </li>
-                                            <li>
-                                                <Link href="/services-details">
-                                                    Service
-                                                </Link>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
+
                             <div className="col-lg-3 col-sm-6">
                                 <div className="footer-widget">
-                                    <h4 className="fw-title">Pages</h4>
-                                    <div className="fw-link">
-                                        <ul className="list-wrap">
-                                            <li>
-                                                <Link href="/about-us">
-                                                    About
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/contact">
-                                                    Pricing
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/contact">
-                                                    Contact
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6">
-                                <div className="footer-widget">
-                                    <h4 className="fw-title">Contact Info</h4>
+                                    <h4 className="fw-title">Contact</h4>
                                     <div className="footer-about">
                                         <ul className="list-wrap">
                                             <li>
@@ -111,7 +77,7 @@ const FooterOne = () => {
                                                     alt=""
                                                 />
                                                 <a href="tel:0123456789">
-                                                    Phone Number
+                                                    010 -7410410
                                                 </a>
                                             </li>
                                             <li>
@@ -120,7 +86,7 @@ const FooterOne = () => {
                                                     alt=""
                                                 />
                                                 <a href="mailto:company@gmail.com">
-                                                    company@gmail.com
+                                                    Info@printvisie.nl
                                                 </a>
                                             </li>
                                             <li>
@@ -128,7 +94,10 @@ const FooterOne = () => {
                                                     src="/img/icon/loction_icon.svg"
                                                     alt=""
                                                 />
-                                                <span>Location</span>
+                                                <span>
+                                                    Aristotelesstraat 20 3076BD
+                                                    Rotterdam
+                                                </span>
                                             </li>
                                         </ul>
                                     </div>

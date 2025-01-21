@@ -1,7 +1,6 @@
 import React from "react";
 import AboutArea from "../../components/About/AboutArea";
 import BannerOne from "../../components/Banner/BannerOne";
-import BlogArea from "../../components/Blog/BlogArea";
 import ConsultationArea from "../../components/Consultation/ConsultationArea";
 import ProjectArea from "../../components/Project/ProjectArea";
 import ServicesArea from "../../components/ServicesArea/ServicesArea";
@@ -19,8 +18,6 @@ const CreativeAgency = () => {
             <ProjectArea />
             <TestimonialArea />
             <ConsultationArea />
-            <BlogArea />
-            {/* <NewsLetterArea /> */}
         </Layout>
     );
 };

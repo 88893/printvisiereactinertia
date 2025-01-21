@@ -9,53 +9,26 @@ const TeamArea = () => {
                     <div className="col-lg-6">
                         <div className="team-img-wrap">
                             <img
-                                src="/img/team/team_img_shape.png"
+                                src="/img/icon/services_icon01.png"
                                 alt=""
                                 className="img-shape"
-                            />
-                            <img
-                                src="/img/team/team_img01.png"
-                                alt=""
-                                className="img-one"
-                            />
-                            <img
-                                src="/img/team/team_img02.png"
-                                alt=""
-                                className="img-two"
-                            />
-                            <img
-                                src="/img/team/team_img03.png"
-                                alt=""
-                                className="img-three"
-                            />
-                            <img
-                                src="/img/team/team_img04.png"
-                                alt=""
-                                className="img-four"
-                            />
-                            <img
-                                src="/img/team/team_img05.png"
-                                alt=""
-                                className="img-five"
                             />
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="team-content">
                             <div className="section-title mb-25">
-                                <span className="sub-title">Our Team</span>
+                                <span className="sub-title">Ons Team</span>
                                 <h2 className="title">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.
+                                    Maak kennis met ons team
                                 </h2>
                             </div>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard.
+                                Ons creatieve team zet zich in om jouw ideeën
+                                tot leven te brengen met passie en vakmanschap
                             </p>
                             <Link href="/team" className="btn">
-                                Meet Our Team <span></span>
+                                Lees Meer<span></span>
                             </Link>
                         </div>
                     </div>

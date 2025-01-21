@@ -2,70 +2,37 @@ import React from "react";
 import ConsultationAreaForm from "./ConsultationAreaForm";
 
 const ConsultationArea = () => {
-  return (
-    <section className="consultation-area pt-120 pb-120">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-7">
-            <div className="consultation-content">
-              <div className="section-title mb-25">
-                <img src="/img/icon/consultation_icon01.png" alt="" />
-                <span className="sub-title">Lorem</span>
-                <h2 className="title">
-                  Lorem ipsum dolor, sit amet consectetur
-                </h2>
-              </div>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and
-              </p>
-              <div className="consultation-list">
-                <ul className="list-wrap">
-                  <li>
-                    <div className="icon">
-                      <img src="/img/icon/consultation_icon02.png" alt="" />
-                      <span>12x</span>
+    return (
+        <section className="consultation-area pt-120 pb-120">
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col-lg-7">
+                        <div className="consultation-content">
+                            <div className="section-title mb-25">
+                                <img
+                                    src="/img/icon/consultation_icon01.png"
+                                    alt=""
+                                />
+                                <span className="sub-title">Offerte</span>
+                                <h2 className="title">
+                                    Op Maat Gemaakt: Vraag Jouw Offerte Aan
+                                </h2>
+                            </div>
+                            <p>
+                                Vraag eenvoudig een offerte aan en ontdek wat
+                                wij voor jou kunnen betekenen. Op maat gemaakt
+                                en vrijblijvend!
+                            </p>
+                        </div>
                     </div>
-                    <div className="content">
-                      <h6 className="title">Lorem Ipsum is simply</h6>
+
+                    <div className="col-lg-5">
+                        <ConsultationAreaForm />
                     </div>
-                  </li>
-                  <li>
-                    <div className="icon">
-                      <img src="/img/icon/consultation_icon03.png" alt="" />
-                      <span>95%</span>
-                    </div>
-                    <div className="content">
-                      <h6 className="title">Lorem Ipsum is simply</h6>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </div>
-
-          <div className="col-lg-5">
-            <ConsultationAreaForm />
-          </div>
-        </div>
-      </div>
-
-      <div className="consultation-shape-wrap">
-        <img
-          src="/img/images/consultation_shape01.png"
-          alt=""
-          className="shape-one ribbonRotate"
-        />
-        <img
-          src="/img/images/consultation_shape02.png"
-          alt=""
-          className="shape-two float-bob-x"
-        />
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default ConsultationArea;

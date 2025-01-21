@@ -11,29 +11,23 @@ const BannerOne = () => {
                             className="banner-img wow fadeInLeft"
                             data-wow-delay=".4s"
                         >
-                            <img src="/img/banner/banner_img.png" alt="" />
+                            <img src="/img/icon/services_icon034.png" alt="" />
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="banner-content">
-                            <span
-                                className="sub-title wow fadeInUp"
-                                data-wow-delay=".2s"
-                            >
-                                Lorem <strong>Lorem</strong> Lorem
-                            </span>
                             <h2
                                 className="title wow fadeInUp"
                                 data-wow-delay=".4s"
                             >
-                                Lorem ipsum dolor sit, amet consectetur
+                                De groenste drukkerij van Rotterdam
                             </h2>
                             <Link
                                 href="/contact"
                                 className="btn wow fadeInUp"
                                 data-wow-delay=".6s"
                             >
-                                Contact Us <span></span>
+                                Ontdek waarom <span></span>
                             </Link>
                         </div>
                     </div>

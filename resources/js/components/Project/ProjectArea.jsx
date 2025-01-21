@@ -53,22 +53,12 @@ const ProjectArea = () => {
                         <div className="project-content">
                             <div className="section-title white-title mb-30">
                                 <span className="sub-title">
-                                    Our Complete Craft
+                                    Recente Projecten
                                 </span>
-                                <h2 className="title">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                </h2>
+                                <h2 className="title">Zien is geloven</h2>
                             </div>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard.
-                            </p>
+                            <p>Dit zijn projecten die we gemaakt hebben</p>
                             <div className="content-bottom">
-                                <Link href="/about-me" className="btn">
-                                    View All Project <span></span>
-                                </Link>
-
                                 <div className="project-nav">
                                     <button
                                         className="swiper-button-prev"

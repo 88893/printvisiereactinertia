@@ -1,39 +1,31 @@
 import React from "react";
 
 const ConsultationAreaForm = () => {
-  return (
-    <div className="consultation-form-wrap">
-      <h4 className="title">Lorum Ipsum</h4>
-      <form action="#">
-        <div className="form-grp">
-          <input type="text" placeholder="Name" />
+    return (
+        <div className="consultation-form-wrap">
+            <h4 className="title">Snel en Eenvoudig: Vraag een Offerte aan</h4>
+            <form action="#">
+                <div className="form-grp">
+                    <input type="text" placeholder="naam" />
+                </div>
+                <div className="form-grp">
+                    <input type="email" placeholder="Emailadres" />
+                </div>
+                <div className="form-grp">
+                    <input type="text" placeholder="Telefoonnummer" />
+                </div>
+                <div className="form-grp">
+                    <input
+                        type="text"
+                        placeholder="Beschrijf hier jouw vraag"
+                    />
+                </div>
+                <button className="btn" type="submit">
+                    Verzenden
+                </button>
+            </form>
         </div>
-        <div className="form-grp">
-          <input type="email" placeholder="Email Address" />
-        </div>
-        <div className="form-grp">
-          <input type="text" placeholder="Phone Number" />
-        </div>
-        <div className="form-grp">
-          <select
-            id="shortBy"
-            name="select"
-            className="form-select"
-            aria-label="Default select example"
-          >
-            <option value="">Subject</option>
-            <option>Subject One</option>
-            <option>Subject Two</option>
-            <option>Subject Three</option>
-            <option>Subject Four</option>
-          </select>
-        </div>
-        <button className="btn" type="submit">
-          Consultation
-        </button>
-      </form>
-    </div>
-  );
+    );
 };
 
 export default ConsultationAreaForm;
