@@ -11,11 +11,7 @@ const CommunityArea = () => {
             </div>
             <div className="community-content">
               <p>
-                Lorem ipsum dolor sit amet, sed nulla ante amet, elementum
-                tincidunt arcu sed laoreet, natoque ac eget imperdiet. Ac
-                scelerisque nibh dolores consectetuer, nulla aptent est pede.
-                Scelerisque euismod varius mi, congue eget sed vestibulum,
-                ornare cras sed nec.
+              Ons team zet zich dagelijks in om hoogwaardige en duurzame drukwerkoplossingen te leveren, met oog voor detail en passie voor het vak.
               </p>
             </div>
           </div>

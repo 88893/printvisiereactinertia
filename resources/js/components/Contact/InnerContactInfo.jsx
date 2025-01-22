@@ -7,7 +7,7 @@ const InnerContactInfo = () => {
             title: "Adres",
             desc: (
                 <>
-                    <p>Aristotelesstraat 20 3076BD Rotterdam</p>
+                    <p>Aristotelesstraat 20, 3076BD, Rotterdam</p>
                 </>
             ),
         },
@@ -16,16 +16,16 @@ const InnerContactInfo = () => {
             title: "E-mail",
             desc: (
                 <>
-                    <a href="info@printvisie.nl">info@printvisie.nl</a>
+                    <a href="mailto:info@printvisie.nl">info@printvisie.nl</a>
                 </>
             ),
         },
         {
             src: "/img/icon/phone_icon03.png",
-            title: "Address",
+            title: "Bellen",
             desc: (
                 <>
-                    <a href="tel:0123456789">010 - 4 198 880</a>
+                    <a href="tel:0107410410">010 - 7410410</a>
                 </>
             ),
         },

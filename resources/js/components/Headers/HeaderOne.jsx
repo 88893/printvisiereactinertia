@@ -162,6 +162,12 @@ const HeaderOne = () => {
                                                     </Link>
                                                 </li>
 
+                                                <li>
+                                                    <a target="_blank" href="https://printvisie.wetransfer.com/">
+                                                        WeTransfer
+                                                    </a>
+                                                </li>
+
                                                 <li
                                                     className={cn(
                                                         "menu-item-has-children",
