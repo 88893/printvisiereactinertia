@@ -34,8 +34,8 @@ const ServicesArea = () => {
             delay_time: 8,
         },
         {
-            title: "Lorem Ipsum",
-            desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            title: "Fullfillment",
+            desc: "Afstemmen, verzenden en bezorgen kan makkelijker. We kennen de beste wegen, de beste tarieven en de beste wijze om het proces moeiteloos te verzorgen.",
 
             delay_time: 8,
         },
