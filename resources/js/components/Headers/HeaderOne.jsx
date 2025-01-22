@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import $ from "jquery";
 import cn from "classnames";
 import { Link } from "@inertiajs/react";
+import DarkModeToggle from "../DarkMode/DarkMode";
 
 const HeaderOne = () => {
     useEffect(() => {
@@ -75,6 +76,19 @@ const HeaderOne = () => {
     }, []);
 
     // const { pathname } = useLocation();
+    const App = () => {
+        return (
+            <div>
+                <header>
+                    <DarkModeToggle />
+                </header>
+                <main>
+                    <h1>Welkom bij mijn website</h1>
+                    <p>Schakel tussen light en dark mode!</p>
+                </main>
+            </div>
+        );
+    };
 
     const isActiveClassName = (path) => {
         // return path === pathname ? "active" : "";
@@ -163,7 +177,10 @@ const HeaderOne = () => {
                                                 </li>
 
                                                 <li>
-                                                    <a target="_blank" href="https://printvisie.wetransfer.com/">
+                                                    <a
+                                                        target="_blank"
+                                                        href="https://printvisie.wetransfer.com/"
+                                                    >
                                                         WeTransfer
                                                     </a>
                                                 </li>

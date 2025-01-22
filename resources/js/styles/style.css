@@ -115,8 +115,17 @@
     --pinterest: #3b5998;
     --youtube: #c4302b;
     --skype: #00aff0;
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --btn-bg: #e0e0e0;
+    --btn-text: #000000;
 }
-
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --btn-bg: #333333;
+    --btn-text: #ffffff;
+}
 /* * {
   cursor: default !important;
 } */
@@ -126,9 +135,11 @@ body {
     font-weight: var(--tg-body-font-weight);
     font-size: var(--tg-body-font-size);
     line-height: var(--tg-body-line-height);
-    color: var(--tg-body-font-color);
     font-style: normal;
     overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .black-background {
     background: var(--tg-black);
