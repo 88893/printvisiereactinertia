@@ -41,21 +41,27 @@ const CounterAreaThree = () => {
             <div className="counter-content-three">
               <div className="section-title title-style-two mb-30">
                 <h2 className="title">
-                  Content Has to Be More That Just Brilliant
+                Duurzaam Drukwerk voor een Betere Toekomst
                 </h2>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, sed nulla ante amet, elementum
-                tincidunt arcu sed laoreet, natoque ac eget imperdiet. Ac
-                scelerisque nibh dolores consectetuer, nulla aptent est pede.
-                Scelerisque euismod varius mi, congue eget sed vestibulum,
-                ornare cras sed nec.
+              Bij Printvisie Rotterdam geloven we in duurzaam drukwerk. Ons doel is om bedrijven
+               en organisaties te helpen hun ecologische voetafdruk te verkleinen door gebruik te
+                maken van milieuvriendelijke materialen en productiemethoden. Wij bieden hoogwaardige
+                 printoplossingen, zoals brochures, visitekaartjes, en posters, terwijl we actief streven
+                  naar het minimaliseren van de impact op het milieu.
               </p>
-              <img src="/img/images/sine.png" alt="" />
-              <div className="content-bottom">
-                <h4 className="title-two">Davis Levin</h4>
-                <span>Director Company</span>
-              </div>
+              <div className="content-bottom" style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
+  <div style={{ textAlign: "center" }}>
+    <span style={{ fontSize: "36px", fontWeight: "bold", color: "#0000FF" }}>100+</span>
+    <p style={{ fontSize: "16px", color: "#0000FF" }}>Tevreden klanten</p>
+  </div>
+  <div style={{ textAlign: "center" }}>
+    <span style={{ fontSize: "36px", fontWeight: "bold", color: "#00FF00" }}>100%</span>
+    <p style={{ fontSize: "16px", color: "#00FF00" }}>Klanttevredenheid</p>
+  </div>
+</div>
+
             </div>
           </div>
         </div>

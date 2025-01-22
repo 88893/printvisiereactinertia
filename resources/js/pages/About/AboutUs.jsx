@@ -1,5 +1,5 @@
 import React from "react";
-import BrandAreaThree from "../../components/Brand/BrandAreaThree";
+import BrandArea from "../../components/Brand/BrandArea";
 import BreadcrumbArea from "../../components/BreadcrumbArea/BreadcrumbArea";
 import ConsultationAreaTwo from "../../components/Consultation/ConsultationAreaTwo";
 import CounterAreaThree from "../../components/CounterArea/CounterAreaThree";
@@ -17,9 +17,7 @@ const AboutUs = () => {
         title="About Us"
         subtitle={"About Us"}
         className={"pt-175 pb-140"}
-      />
-      <CounterAreaThree />
-      <SuccessArea />
+      />      <CounterAreaThree />
       <HistoryArea />
       <TestimonialArea />
     </Layout>
