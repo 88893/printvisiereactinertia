@@ -5,21 +5,22 @@ const CounterAreaThree = () => {
   const counter_items = [
     {
       src: "/img/icon/inner_counter_icon01.png",
-      titles: ["Satisfied", "Customers"],
+      titles: ["Tevreden", "Klanten"], // Over tevreden klanten
     },
     {
       src: "/img/icon/inner_counter_icon02.png",
-      titles: ["Project", "Finished"],
+      titles: ["Afgeronde", "Projecten"], // Voor het aantal succesvolle projecten
     },
     {
       src: "/img/icon/inner_counter_icon03.png",
-      titles: ["Our", "Employees"],
+      titles: ["Toegewijde", "Werknemers"], // Voor de medewerkers
     },
     {
       src: "/img/icon/inner_counter_icon04.png",
-      titles: ["International", "Awards"],
+      titles: ["Milieuvriendelijk", "Materiaal"], // Voor hun duurzaamheid en erkenningen
     },
   ];
+  
 
   return (
     <section className="counter-area-three">

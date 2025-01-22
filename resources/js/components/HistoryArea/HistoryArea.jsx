@@ -60,6 +60,10 @@ const HistoryArea = () => {
         <HistoryAreaRoadmap />
       </div>
 
+      <div className="history-shape-wrap">
+        <img src="/img/images/history_shape01.png" alt="Vorm 1" />
+        <img src="/img/images/history_shape02.png" alt="Vorm 2" />
+      </div>
     </section>
   );
 };

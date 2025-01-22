@@ -14,8 +14,8 @@ const AboutUs = () => {
   return (
     <Layout header={1} footer={1} className="" mainClassName="">
       <BreadcrumbArea
-        title="About Us"
-        subtitle={"About Us"}
+        title="Over Ons"
+        subtitle={"Over Ons"}
         className={"pt-175 pb-140"}
       />      <CounterAreaThree />
       <HistoryArea />

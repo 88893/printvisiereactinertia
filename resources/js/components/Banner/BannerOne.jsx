@@ -11,7 +11,7 @@ const BannerOne = () => {
                             className="banner-img wow fadeInLeft"
                             data-wow-delay=".4s"
                         >
-                            <img src="/img/icon/services_icon034.png" alt="" />
+                            <img src="/img/icon/drukkerij-printvisie-rotterdam.jpg" alt="" />
                         </div>
                     </div>
                     <div className="col-lg-6">

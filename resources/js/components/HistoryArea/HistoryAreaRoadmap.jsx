@@ -16,8 +16,8 @@ const HistoryAreaRoadmap = () => {
         >
           <span className="dot pulse-three"></span>
           <div className="content">
-            <h5 className="title">2020</h5>
-            <p>January 14 th</p>
+            <h5 className="title">1980</h5>
+            <p>Oprichting van Printvisie in Rotterdam</p>
           </div>
         </li>
         <li
@@ -27,8 +27,8 @@ const HistoryAreaRoadmap = () => {
         >
           <span className="dot pulse-four"></span>
           <div className="content">
-            <h5 className="title">2021</h5>
-            <p>January 14 th</p>
+            <h5 className="title">2009</h5>
+            <p>Leander Wünschmann neemt het bedrijf over</p>
           </div>
         </li>
         <li
@@ -38,8 +38,8 @@ const HistoryAreaRoadmap = () => {
         >
           <span className="dot pulse-five"></span>
           <div className="content">
-            <h5 className="title">2022</h5>
-            <p>January 14 th</p>
+            <h5 className="title">2013</h5>
+            <p>Lancering van de duurzame webshop Groenprint</p>
           </div>
         </li>
         <li
@@ -50,7 +50,7 @@ const HistoryAreaRoadmap = () => {
           <span className="dot pulse-six"></span>
           <div className="content">
             <h5 className="title">2023</h5>
-            <p>January 14 th</p>
+            <p>Integratie van ClimateCalc in de bestelsoftware</p>
           </div>
         </li>
       </ul>
