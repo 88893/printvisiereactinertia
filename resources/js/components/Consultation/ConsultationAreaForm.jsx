@@ -7,7 +7,7 @@ const ConsultationAreaForm = () => {
         message: "",
         type: "",
     });
-    const siteKey = "6Ldu4s0qAAAAAM9TjhQRFSRmK1FF6kobzFM56beU";
+    const siteKey = "6LeiEfIqAAAAAN8JCu5LMx2Hv-YkvuuYVuRw9sRB";
 
     useEffect(() => {
         const loadRecaptchaScript = () => {
