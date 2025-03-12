@@ -6,6 +6,8 @@ import { doAnimations } from "../../lib/helpers";
 import cn from "classnames";
 import Layout from "../../layouts/Layout";
 import { Link } from "@inertiajs/react";
+import BreadcrumbArea from "../../components/BreadcrumbArea/BreadcrumbArea";
+import HistoryAreaRoadmap from "../../components/HistoryArea/HistoryAreaRoadmap";
 
 const CreativeAgency = () => {
     const services_area_list = [
@@ -548,7 +550,7 @@ const CreativeAgency = () => {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-6">
-                            <div className="section-title text-center mb-60">
+                            <div className="text-center section-title mb-60">
                                 <span className="sub-title">Referenties</span>
                                 <h2 className="title">Wij werken voor</h2>
                             </div>
