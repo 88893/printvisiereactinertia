@@ -1,7 +1,6 @@
 import "../css/app.css";
 import "./bootstrap";
 
-// Import your custom styles
 import "./styles/bootstrap.min.css";
 import "./styles/animate.min.css";
 import "./styles/fontawesome-all.min.css";
@@ -16,6 +15,7 @@ import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import React, { useEffect } from "react";
+import { BrowserRouter, useLocation } from "react-router-dom";
 import WOW from "wow.js";
 import AnimatedCursor from "react-animated-cursor";
 
