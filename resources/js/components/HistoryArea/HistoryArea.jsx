@@ -1,7 +1,6 @@
 import React from "react";
 import HistoryAreaRoadmap from "./HistoryAreaRoadmap";
 
-
 const HistoryArea = () => {
   return (
     <section className="history-area">

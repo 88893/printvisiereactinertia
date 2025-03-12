@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-const Preloader = ({ duration = 1 }) => {
+const Preloader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadData = async () => {
-      await new Promise((r) => setTimeout(r, duration));
-      setLoading(false);
+      await new Promise((r) => setTimeout(r, 1000));
+      setLoading((loading) => !loading);
     };
 
     loadData();
-  }, [duration]);
+  }, []);
 
   if (loading) {
     return (

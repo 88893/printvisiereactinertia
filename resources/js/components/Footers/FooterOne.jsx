@@ -34,22 +34,10 @@ const FooterOne = () => {
                                         </ul>
                                     </div>
                                     <div className="footer-contact">
-                                        <span>KVK Rotterdam</span>
-                                        <h3 className="title">
-                                            <a>24139784</a>
-                                        </h3>
-                                        <span>KVK Rotterdam</span>
-                                        <h3 className="title">
-                                            <a>24139784</a>
-                                        </h3>
-                                        <span>IBAN-nummer</span>
-                                        <h3 className="title">
-                                            <a>NL75 RABO 0117 1309 58</a>
-                                        </h3>
-                                        <span>BTW-nummer</span>
-                                        <h3 className="title">
-                                            <a>NL009621416B01</a>
-                                        </h3>
+                                        <span>Contact</span>
+                                        <h2 className="title">
+                                            <a href="tel:0107410410">010-7410410</a>
+                                        </h2>
                                     </div>
                                 </div>
                             </div>

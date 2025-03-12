@@ -23,7 +23,7 @@ const BannerOne = () => {
                                 De groenste drukkerij van Rotterdam
                             </h2>
                             <Link
-                                href="/about-us"
+                                href="/contact"
                                 className="btn wow fadeInUp"
                                 data-wow-delay=".6s"
                             >

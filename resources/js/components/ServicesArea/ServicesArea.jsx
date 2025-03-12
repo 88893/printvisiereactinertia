@@ -5,7 +5,7 @@ const ServicesArea = () => {
     const services_area_list = [
         {
             title: "Advies en begeleiding",
-            desc: "Wil je iets weten ove drukwerktechnieken, papiersoorten, afwerkingen of fullfillment? Heb je een schijnbaar idiote wens als het gaat om levertijden, drukwerkformaten en afwerkingen?",
+            desc: " Wil je iets weten ove drukwerktechnieken, papiersoorten, afwerkingen of fullfillment? Heb je een schijnbaar idiote wens als het gaat om levertijden, drukwerkformaten en afwerkingen?",
 
             delay_time: 2,
         },
