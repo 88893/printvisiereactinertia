@@ -1,5 +1,14 @@
-import React, { useEffect } from "react";
 import { Head } from "@inertiajs/inertia-react";
+import { useState, useEffect } from "react";
+import React from "react";
+import SlickSlider from "../../components/SlickSlider/SlickSlider";
+import $ from "jquery";
+import { doAnimations } from "../../lib/helpers";
+import cn from "classnames";
+import Layout from "../../layouts/Layout";
+import { Link } from "@inertiajs/react";
+import BreadcrumbArea from "../../components/BreadcrumbArea/BreadcrumbArea";
+import HistoryAreaRoadmap from "../../components/HistoryArea/HistoryAreaRoadmap";
 
 export default function DynamicPage({ page }) {
     // Add custom imports to the head

@@ -8,4 +8,4 @@ use Inertia\Inertia;
 Route::get('/', [PageController::class, 'show'])->name('page.home');
 
 // Dynamic page route - this will match any slug
-Route::get('/pages/{slug}', [PageController::class, 'show'])->name('page.show');
+Route::get('/{slug}', [PageController::class, 'show'])->name('page.show');
