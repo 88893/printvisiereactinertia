@@ -84,12 +84,7 @@ const DynamicPage = ({ page }) => {
                 )}
             </Head>
 
-            <div>
-                <div
-                    className="dynamic-page-content"
-                    dangerouslySetInnerHTML={createMarkup()}
-                />
-            </div>
+            <div>{page.content}</div>
         </>
     );
 };
