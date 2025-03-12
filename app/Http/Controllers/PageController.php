@@ -11,7 +11,7 @@ class PageController extends Controller
     /**
      * Display the specified page by its slug.
      */
-    public function show($slug)
+    public function show($slug = 'home')
     {
         $page = Page::where('slug', $slug)
             ->where('is_active', true)

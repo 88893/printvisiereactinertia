@@ -1,7 +1,7 @@
 import { Head } from "@inertiajs/inertia-react";
 import { useState, useEffect } from "react";
 import React from "react";
-import SlickSlider from "../../components/SlickSlider/SlickSlider";
+import SlickSlider from "../components/SlickSlider/SlickSlider";
 import $ from "jquery";
 import { doAnimations } from "../../lib/helpers";
 import cn from "classnames";
@@ -10,7 +10,7 @@ import { Link } from "@inertiajs/react";
 import BreadcrumbArea from "../../components/BreadcrumbArea/BreadcrumbArea";
 import HistoryAreaRoadmap from "../../components/HistoryArea/HistoryAreaRoadmap";
 
-export default function DynamicPage({ page }) {
+const DynamicPage = ({ page }) => {
     // Add custom imports to the head
     useEffect(() => {
         // Add custom imports to head
@@ -92,4 +92,8 @@ export default function DynamicPage({ page }) {
             </div>
         </>
     );
-}
+};
+
+DynamicPage.layout = (page) => <Layout children={page} />;
+
+export default DynamicPage;
