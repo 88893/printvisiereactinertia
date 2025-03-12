@@ -1,4 +1,4 @@
-import { Head } from "@inertiajs/inertia-react";
+import { Head } from "@inertiajs/react";
 import { useState, useEffect } from "react";
 import React from "react";
 import SlickSlider from "../components/SlickSlider/SlickSlider";
