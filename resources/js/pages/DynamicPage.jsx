@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import { Head } from "@inertiajs/inertia-react";
-import { usePage } from "@inertiajs/inertia-react";
 
 export default function DynamicPage({ page }) {
-    const { component } = usePage();
-
     // Add custom imports to the head
     useEffect(() => {
         // Add custom imports to head
