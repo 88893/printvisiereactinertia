@@ -10,14 +10,6 @@ const FooterThree = () => {
                         <div className="row justify-content-center">
                             <div className="col-xl-6 col-lg-8">
                                 <div className="footer-content-two text-center">
-                                    <div className="logo">
-                                        <Link href="/">
-                                            <img
-                                                src="/img/logo/logo.png"
-                                                alt=""
-                                            />
-                                        </Link>
-                                    </div>
                                     <p>
                                         Agency is a full-service agency, busy
                                         designing and building beautiful digital

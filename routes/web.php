@@ -1,52 +1,71 @@
 <?php
 
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ReviewController; 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Home/CreativeAgency');
+
+Route::get('/login', function() {
+    return Inertia::render('Auth/Login');
+})->name('login');
+
+Route::post('/login', function(Illuminate\Http\Request $request) {
+    $credentials = $request->validate([
+        'email' => ['required', 'email'],
+        'password' => ['required'],
+    ]);
+
+    if (Auth::attempt($credentials)) {
+        $request->session()->regenerate();
+        return redirect()->intended('dashboard');
+    }
+
+    return back()->withErrors([
+        'email' => 'De opgegeven inloggegevens komen niet overeen met onze gegevens.',
+    ]);
 });
 
-Route::get('/home-two', function () {
-    return Inertia::render('Home/PersonalPortfolio');
+
+Route::post('/logout', function(Illuminate\Http\Request $request) {
+    Auth::logout();
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
+    return redirect('/');
+})->name('logout');
+
+
+Route::middleware(['auth'])->group(function () {
+ 
+    Route::get('/dashboard', [ReviewController::class, 'index'])->name('dashboard');
+    
+   
+    Route::get('/users', [UserController::class, 'index'])->name('users.index');
+     
+   
+    Route::post('/reviews', [ReviewController::class, 'store'])->name('reviews.store');
+    Route::put('/reviews/{review}', [ReviewController::class, 'update'])->name('reviews.update');
+    Route::delete('/reviews/{review}', [ReviewController::class, 'destroy'])->name('reviews.destroy');
+    
+    
+    Route::post('/users', [UserController::class, 'store'])->name('users.store');
+    Route::put('/users/{user}', [UserController::class, 'update'])->name('users.update');
+    Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+
+  Route::prefix('dashboard/pages')->name('pages.')->group(function () {
+        Route::get('/', [PageController::class, 'adminIndex'])->name('index');
+        Route::get('/create', [PageController::class, 'adminCreate'])->name('create');
+        Route::post('/store', [PageController::class, 'adminStore'])->name('store');
+        Route::get('/edit/{page}', [PageController::class, 'adminEdit'])->name('edit');
+        Route::put('/{page}', [PageController::class, 'adminUpdate'])->name('update');
+        Route::delete('/{page}', [PageController::class, 'adminDestroy'])->name('destroy');
+    });
 });
 
-Route::get('/home-three', function () {
-    return Inertia::render('Home/DigitalAgency');
-});
 
-Route::get('/about-us', function () {
-    return Inertia::render('About/AboutUs');
-});
+Route::get('/', [PageController::class, 'show'])->name('page.home');
 
-Route::get('/about-me', function () {
-    return Inertia::render('About/AboutMe');
-});
 
-Route::get('/team', function () {
-    return Inertia::render('Team/TeamPage');
-});
-
-Route::get('/team-details', function () {
-    return Inertia::render('Team/TeamPageDetails');
-});
-
-Route::get('/project-details', function () {
-    return Inertia::render('PortfolioDetailsPage');
-});
-
-Route::get('/services-details', function () {
-    return Inertia::render('ServicesDetailsPage');
-});
-
-Route::get('/contact', function () {
-    return Inertia::render('ContactPage');
-});
-
-Route::get('/blog', function () {
-    return Inertia::render('Blog/BlogPage');
-});
-
-Route::get('/blog-details', function () {
-    return Inertia::render('Blog/BlogDetailsPage');
-});
+Route::get('/{slug}', [PageController::class, 'show'])->name('page.show');

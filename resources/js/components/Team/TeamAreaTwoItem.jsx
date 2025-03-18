@@ -35,11 +35,6 @@ const TeamAreaTwoItem = ({ item, className }) => {
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <i className="fab fa-behance"></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>

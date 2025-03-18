@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "@inertiajs/react";
 
-const AboutArea = () => {
+const AboutArea = ({
+    title,
+    subTitle,
+    desc,
+    about_items = [],
+    button_text,
+    footer_text,
+}) => {
+    console.log(about_items);
     return (
         <section className="about-area">
             <div className="container custom-container">
@@ -9,70 +17,47 @@ const AboutArea = () => {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-46 order-0 order-lg-2">
                             <div className="about-img text-end">
-                                <img src="/img/images/about_img.jpg" alt="" />
+                                <img
+                                    src="/img/icon/dennis-den-engelsman-offerte-aanvragen-printvisie.png"
+                                    alt=""
+                                />
                             </div>
                         </div>
                         <div className="col-54">
                             <div className="about-content">
                                 <div className="section-title mb-25">
                                     <span className="sub-title">
-                                        About Company
+                                        {subTitle}
                                     </span>
-                                    <h2 className="title">
-                                        Lorem ipsum dolor sit, amet consectetur
-                                    </h2>
+                                    <h2 className="title">{title}</h2>
                                 </div>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard.
-                                </p>
+                                <p>{desc}</p>
                                 <ul className="list-wrap">
-                                    <li>
-                                        <div className="icon">
-                                            <img
-                                                src="/img/icon/about_icon01.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title">
-                                                Lorem Ipsum
-                                            </h4>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text
-                                                of the printing and typesetting
-                                                industry.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="icon">
-                                            <img
-                                                src="/img/icon/about_icon02.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title">
-                                                Lorem Ipsum
-                                            </h4>
-                                            <p>
-                                                Lorem Ipsum is simply dummy text
-                                                of the printing and typesetting
-                                                industry.
-                                            </p>
-                                        </div>
-                                    </li>
+                                    {about_items?.map((item, index) => (
+                                        <li key={index}>
+                                            <div className="icon">
+                                                <img
+                                                    src={item.icon.src}
+                                                    alt={item.icon.alt}
+                                                />
+                                            </div>
+                                            <div className="content">
+                                                <h4 className="title">
+                                                    {item.content.title}
+                                                </h4>
+                                                <p>
+                                                    {item.content.description}
+                                                </p>
+                                            </div>
+                                        </li>
+                                    ))}
                                 </ul>
 
                                 <div className="about-content-bottom">
-                                    <span>
-                                        Lorem ipsum dolor sit amet consectetur
-                                    </span>
+                                    <span>{footer_text}</span>
                                     <div className="read-more-btn">
                                         <Link href="/about-us" className="btn">
-                                            Read More <span></span>
+                                            {button_text} <span></span>
                                         </Link>
                                     </div>
                                 </div>

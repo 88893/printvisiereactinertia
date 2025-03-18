@@ -1,5 +1,5 @@
 import React from "react";
-import { Link "@inertiajs/inertia-react";
+import { Link } from "@inertiajs/inertia-react";
 
 const AgencyArea = () => {
     return (
@@ -8,7 +8,10 @@ const AgencyArea = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="text-center agency-img">
-                            <img src="/img/images/agency_img.png" alt="" />
+                            <img
+                                src="/img/images/agency_img.png"
+                                alt="Agency"
+                            />
                         </div>
                     </div>
 
@@ -31,7 +34,8 @@ const AgencyArea = () => {
                                 the industry's standard.
                             </p>
 
-                            <Linkbout-us" className="btn">
+                            {/* Fixed Link Component */}
+                            <Link href="/about-us" className="btn">
                                 Learn More <span></span>
                             </Link>
                         </div>
@@ -39,11 +43,12 @@ const AgencyArea = () => {
                 </div>
             </div>
 
+            {/* Agency Shapes */}
             <div className="agency-shape-wrap">
-                <img src="/img/images/agency_shape01.png" alt="" />
-                <img src="/img/images/agency_shape02.png" alt="" />
-                <img src="/img/images/agency_shape03.png" alt="" />
-                <img src="/img/images/agency_shape04.png" alt="" />
+                <img src="/img/images/agency_shape01.png" alt="Shape 1" />
+                <img src="/img/images/agency_shape02.png" alt="Shape 2" />
+                <img src="/img/images/agency_shape03.png" alt="Shape 3" />
+                <img src="/img/images/agency_shape04.png" alt="Shape 4" />
             </div>
         </section>
     );

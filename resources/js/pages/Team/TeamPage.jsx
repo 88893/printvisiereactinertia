@@ -10,7 +10,7 @@ const TeamPage = () => {
   return (
     <Layout header={1} footer={1} className="" mainClassName="">
       <BreadcrumbArea
-        title={"Our Team Members"}
+        title={"Jouw specialisten"}
         subtitle={"Team"}
         showShape={false}
         className={" breadcrumb-area-two pt-175"}

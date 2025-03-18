@@ -1,5 +1,4 @@
 import React from "react";
-// import Odometer from "react-odometerjs";
 
 const CounterAreaThreeItem = (props) => {
     return (

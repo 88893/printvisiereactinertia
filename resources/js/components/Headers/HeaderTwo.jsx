@@ -316,12 +316,7 @@ const HeaderTwo = () => {
                                             <i className="fas fa-times"></i>
                                         </div>
                                         <div className="nav-logo">
-                                            <a href="index.html">
-                                                <img
-                                                    src="/img/logo/logo.png"
-                                                    alt="Logo"
-                                                />
-                                            </a>
+                                            <a href="index.html"></a>
                                         </div>
                                         <div className="menu-outer">
                                             {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "@inertiajs/react";
 
-const BannerOne = () => {
+const BannerOne = ({ title, button_text }) => {
     return (
         <section className="banner-area banner-bg">
             <div className="container">
@@ -11,29 +11,27 @@ const BannerOne = () => {
                             className="banner-img wow fadeInLeft"
                             data-wow-delay=".4s"
                         >
-                            <img src="/img/banner/banner_img.png" alt="" />
+                            <img
+                                src="/img/icon/drukkerij-printvisie-rotterdam.jpg"
+                                alt=""
+                            />
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="banner-content">
-                            <span
-                                className="sub-title wow fadeInUp"
-                                data-wow-delay=".2s"
-                            >
-                                Lorem <strong>Lorem</strong> Lorem
-                            </span>
                             <h2
                                 className="title wow fadeInUp"
                                 data-wow-delay=".4s"
                             >
-                                Lorem ipsum dolor sit, amet consectetur
+                                {title}
                             </h2>
                             <Link
                                 href="/contact"
                                 className="btn wow fadeInUp"
                                 data-wow-delay=".6s"
                             >
-                                Contact Us <span></span>
+                                {button_text}
+                                <span></span>
                             </Link>
                         </div>
                     </div>
