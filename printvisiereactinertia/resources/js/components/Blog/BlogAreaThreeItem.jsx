@@ -1,0 +1,39 @@
+import React from "react";
+import { Link } from "@inertiajs/react";
+
+const BlogAreaThreeItem = (props) => {
+    return (
+        <div className="blog-item-two blog-item-three">
+            <div className="blog-thumb-two">
+                <Link href={props.item.url}>
+                    <img src={props.item.src} alt="" />
+                </Link>
+            </div>
+            <div className="blog-content-two">
+                <div className="blog-meta">
+                    <ul className="list-wrap">
+                        <li>
+                            <i className="fal fa-user" />
+                            <Link href={props.item.url}>
+                                {props.item.author}
+                            </Link>
+                        </li>
+                        <li>
+                            <i className="fal fa-calendar" />
+                            {props.item.date}
+                        </li>
+                    </ul>
+                </div>
+                <h2 className="title">
+                    <Link href={props.item.url}>{props.item.title}</Link>
+                </h2>
+                <p>
+                    {props.item.desc}...
+                    <Link href={props.item.url}>Read More</Link>
+                </p>
+            </div>
+        </div>
+    );
+};
+
+export default BlogAreaThreeItem;
